@@ -88,6 +88,11 @@ Use real-world datasets (NASA, OpenStreetMap, etc.)
 Apply machine learning for automated classification
 
 👤 Author
+
 Agbozu Ebingiye Nelvin
+
 Email: [nelvinebingiye@gmail.com]
+
 GitHub: [github.com/nelvinebi]
+
+LinkedIn: *https://www.linkedin.com/in/agbozu-ebi/
