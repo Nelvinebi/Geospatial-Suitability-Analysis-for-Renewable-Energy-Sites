@@ -1,98 +1,151 @@
-# Geospatial Suitability Analysis for Renewable Energy Sites
+Geospatial Suitability Analysis for Renewable Energy Sites
 
-This project simulates and evaluates site suitability for renewable energy development based on geospatial criteria such as solar irradiance, wind speed, terrain slope, proximity to infrastructure, and land use type. Synthetic data is generated and scored to classify locations into low, moderate, or high suitability.
+A data-driven geospatial analysis project that evaluates land suitability for renewable energy development using environmental and infrastructure-based indicators. The project generates synthetic spatial datasets, computes suitability scores, and visualizes results to support renewable energy site selection.
 
----
+📌 Project Overview
 
-## 📌 Project Overview
+Renewable energy deployment requires informed spatial planning to ensure optimal resource utilization, infrastructure accessibility, and environmental sustainability.
 
-Renewable energy planning requires location-based decision-making. This project uses synthetic geospatial data to model the suitability of land for solar or wind energy installations. It assigns a weighted suitability score to each site and classifies them to support planning and decision-making processes.
+This project simulates geospatial data and applies a weighted suitability analysis framework to identify potential locations for renewable energy installations such as solar farms and wind power sites.
 
----
+Using Python-based data analysis and visualization techniques, candidate sites are evaluated based on environmental and spatial factors including solar irradiance, wind speed, terrain slope, land use, and proximity to infrastructure.
 
-## 🧪 Features Considered
+The workflow demonstrates how geospatial suitability analysis can support renewable energy planning and decision-making.
 
-- **Solar Irradiance (kWh/m²/day)** – Energy potential from sunlight.
-- **Wind Speed (m/s)** – Usability of wind energy.
-- **Land Slope (degrees)** – Flat areas are preferred.
-- **Distance to Road/Grid (km)** – Infrastructure access.
-- **Land Use Type** – Urban, agricultural, barren, or forest.
+🧪 Features Considered
 
----
+The suitability model evaluates multiple geospatial factors:
 
-## 🧮 Methodology
+Feature	Description
+Solar Irradiance (kWh/m²/day)	Measures solar energy potential at a location
+Wind Speed (m/s)	Determines viability for wind energy generation
+Land Slope (degrees)	Flatter terrain is preferred for infrastructure installation
+Distance to Road/Grid (km)	Proximity to infrastructure reduces development cost
+Land Use Type	Determines environmental and regulatory suitability
+🧮 Methodology
 
-1. **Synthetic Data Generation** (150+ points)
-2. **Weighted Scoring Function** for each site
-3. **Suitability Classification**:
-   - High
-   - Moderate
-   - Low
-4. **Visualization** of classification results
+The project follows a simplified geospatial suitability analysis workflow:
 
----
+Synthetic Geospatial Data Generation
+Over 150 candidate site records are simulated using realistic environmental ranges.
 
-## 📊 Dataset
+Feature-Based Suitability Scoring
+Each site receives a weighted suitability score based on environmental and infrastructure factors.
+
+Site Classification
+Locations are categorized into:
+
+High Suitability
+
+Moderate Suitability
+
+Low Suitability
+
+Data Visualization & Analysis
+Multiple charts are generated to explore relationships between renewable energy resources and site suitability.
+
+📊 Data Visualizations
+
+The analysis includes several visualizations to interpret suitability results.
+
+1️⃣ Suitability Classification Distribution
+
+Displays the number of locations categorized as High, Moderate, or Low suitability.
+
+2️⃣ Suitability Score Distribution
+
+A histogram showing the spread of calculated suitability scores across candidate locations.
+
+3️⃣ Feature Influence Analysis
+
+A bar chart illustrating how environmental variables correlate with the final suitability score.
+
+4️⃣ Renewable Resource Relationship
+
+A scatter plot showing the relationship between solar irradiance and wind speed, identifying areas with hybrid renewable potential.
+
+5️⃣ Correlation Heatmap
+
+A correlation matrix showing relationships between environmental variables used in the suitability analysis.
+
+These visualizations help interpret how different factors influence renewable energy site selection.
+
+📊 Dataset
 
 The generated dataset is stored in:
 
-- `renewable_energy_suitability_data.xlsx`
+renewable_energy_suitability_data.xlsx
 
-This file includes all input features, computed scores, and classification labels.
+The dataset includes:
 
----
+Environmental features
 
-## 📁 Repository Structure
+Infrastructure distance
 
-📦 renewable-energy-suitability
-├── renewable_energy_suitability_data.xlsx # Synthetic data
-├── suitability_analysis.py # Main Python script
-├── README.md # Project description
+Computed suitability score
 
-yaml
-Copy
-Edit
+Suitability classification label
 
----
+This dataset can also be imported into GIS tools for further spatial mapping.
 
-## 🚀 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/renewable-energy-suitability.git
-   cd renewable-energy-suitability
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the analysis script:
-
-bash
-Copy
-Edit
+📁 Repository Structure
+renewable-energy-suitability
+│
+├── renewable_energy_suitability_data.xlsx   # Synthetic geospatial dataset
+├── suitability_analysis.py                  # Main Python analysis script
+├── README.md                                # Project documentation
+🚀 How to Run the Project
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/renewable-energy-suitability.git
+cd renewable-energy-suitability
+2️⃣ Install Required Libraries
+pip install pandas numpy matplotlib seaborn openpyxl
+3️⃣ Run the Analysis Script
 python suitability_analysis.py
 📈 Output
-Suitability classification for each site
 
-Visual summary of distribution (bar chart)
+The script generates:
 
-Ready-to-use Excel dataset for mapping or further analysis
+Suitability score for each candidate site
 
-💡 Future Work
-Integrate with GIS platforms (e.g., QGIS, GeoPandas)
+Suitability classification (High / Moderate / Low)
 
-Use real-world datasets (NASA, OpenStreetMap, etc.)
+Multiple visualizations for exploratory analysis
 
-Apply machine learning for automated classification
+A structured Excel dataset for further GIS analysis
+
+🌍 Potential Applications
+
+This analytical workflow can support:
+
+Renewable energy site planning
+
+Preliminary GIS-based land suitability studies
+
+Environmental and infrastructure planning
+
+Educational demonstrations of spatial decision analysis
+
+🔮 Future Improvements
+
+Potential extensions of this project include:
+
+Integration with real geospatial datasets (NASA POWER, OpenStreetMap, etc.)
+
+Implementation of GIS libraries such as GeoPandas
+
+Machine learning models for automated site classification
+
+Development of interactive spatial maps
+
+Multi-criteria decision analysis (MCDA) frameworks
 
 👤 Author
 
 Agbozu Ebingiye Nelvin
+Environmental Data Scientist | GIS | Remote Sensing | Machine Learning
 
-Email: [nelvinebingiye@gmail.com]
+📧 Email: nelvinebingiye@gmail.com
+🔗 GitHub: https://github.com/nelvinebi
+🔗 LinkedIn: https://www.linkedin.com/in/agbozu-ebi/
 
-GitHub: [github.com/nelvinebi]
-
-LinkedIn: *https://www.linkedin.com/in/agbozu-ebi/
