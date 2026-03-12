@@ -1,8 +1,10 @@
-Geospatial Suitability Analysis for Renewable Energy Sites
+# Geospatial Suitability Analysis for Renewable Energy Sites
+
+![Pie chart](https://github.com/Nelvinebi/Geospatial-Suitability-Analysis-for-Renewable-Energy-Sites/blob/b21a6edcdb58d1d689fd50cd1f744defdd4953b1/Renewable%20Energy%20Site%20Suitability%20Distribution.png)
 
 A data-driven geospatial analysis project that evaluates land suitability for renewable energy development using environmental and infrastructure-based indicators. The project generates synthetic spatial datasets, computes suitability scores, and visualizes results to support renewable energy site selection.
 
-📌 Project Overview
+## 📌 Project Overview
 
 Renewable energy deployment requires informed spatial planning to ensure optimal resource utilization, infrastructure accessibility, and environmental sustainability.
 
@@ -12,7 +14,7 @@ Using Python-based data analysis and visualization techniques, candidate sites a
 
 The workflow demonstrates how geospatial suitability analysis can support renewable energy planning and decision-making.
 
-🧪 Features Considered
+## 🧪 Features Considered
 
 The suitability model evaluates multiple geospatial factors:
 
@@ -50,21 +52,31 @@ The analysis includes several visualizations to interpret suitability results.
 
 1️⃣ Suitability Classification Distribution
 
+![Suitability Classification](https://github.com/Nelvinebi/Geospatial-Suitability-Analysis-for-Renewable-Energy-Sites/blob/b21a6edcdb58d1d689fd50cd1f744defdd4953b1/Suitability%20Classification.png)
+
 Displays the number of locations categorized as High, Moderate, or Low suitability.
 
 2️⃣ Suitability Score Distribution
+
+![Suitability Score](https://github.com/Nelvinebi/Geospatial-Suitability-Analysis-for-Renewable-Energy-Sites/blob/b21a6edcdb58d1d689fd50cd1f744defdd4953b1/Distribution%20of%20Suitability%20Score.png)
 
 A histogram showing the spread of calculated suitability scores across candidate locations.
 
 3️⃣ Feature Influence Analysis
 
+![Feature Influence Analysis](https://github.com/Nelvinebi/Geospatial-Suitability-Analysis-for-Renewable-Energy-Sites/blob/b21a6edcdb58d1d689fd50cd1f744defdd4953b1/Influence%20of%20Factors%20on%20Site%20Suitability.png)
+
 A bar chart illustrating how environmental variables correlate with the final suitability score.
 
 4️⃣ Renewable Resource Relationship
 
+![Solar vs Wind](https://github.com/Nelvinebi/Geospatial-Suitability-Analysis-for-Renewable-Energy-Sites/blob/db29a85f3a0ba99b17f0c6b4f5867e90703e6e6d/Solar%20Vs%20Wind%20Energy%20Potential.png)
+
 A scatter plot showing the relationship between solar irradiance and wind speed, identifying areas with hybrid renewable potential.
 
 5️⃣ Correlation Heatmap
+
+![Correlation Heatmap](https://github.com/Nelvinebi/Geospatial-Suitability-Analysis-for-Renewable-Energy-Sites/blob/b21a6edcdb58d1d689fd50cd1f744defdd4953b1/Feature%20Correlation%20Matrix.png)
 
 A correlation matrix showing relationships between environmental variables used in the suitability analysis.
 
